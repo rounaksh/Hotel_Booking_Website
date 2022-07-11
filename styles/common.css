@@ -1,7 +1,18 @@
 .container {
     display: block;
 }
-img {
+.logo {
     width: 150px;
     height: 150px;
+}
+.searchBarImg {
+    width: 300px;
+    height: 300px;
+}
+.social-media-links {
+    width: 20px;
+    height: 22px;
+}
+.copyright-text {
+    text-transform: uppercase;
 }
