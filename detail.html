@@ -15,14 +15,41 @@
 <body>
     <div class="container">
         <header>
-            <img class="logo" src="assests/images/logo.png" alt="logo">
-            <a href="login.html" target="_blank" rel="noopener noreferrer">login</a>
+            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
+            <a href="login.html" rel="noopener noreferrer">login</a>
         </header>
         <div class="contentDiv">
             <section class="hotelDetails">
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
                 <section class="hotelDescription">
-                    <a href="payment.html">Book Now</a>
+                    <form action="payment.html">
+                        <div>
+                            <label for="numberOfAdults">Adults: 
+                                <input type="number" name="numberOfAdults" id="numberOfAdults" value="1" min="1">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="name">Name:
+                                <input type="text" name="name" id="name" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="fromDate">From Date:
+                                <input type="date" name="fromDate" id="fromDate" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="toDate">To Date:
+                                <input type="date" name="toDate" id="toDate" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="total">Total:
+                                <input type="number" name="total" id="total" readonly>
+                            </label>
+                        </div>
+                        <button type="submit">Book Now</button>
+                    </form>
                     <h2>Radisson Blu Hotel</h2>
                     <p>RATING</p>
                     <p>5 Star</p>
@@ -41,7 +68,7 @@
         </div>
         <footer>
             <section>
-                <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                <a href="contact.html" rel="noopener noreferrer">Contact Us</a>
             </section>
             <section>
                 <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-media-links" src="assests/images/facebook.png" alt="facebook"></a>
