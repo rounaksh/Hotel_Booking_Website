@@ -1,4 +1,19 @@
-.searchBarImg {
+.heroDiv {
     width: 150px;
     height: 150px;
+    border-radius: 20px;
+}
+.cityCard {
+    margin: 3% 2%;
+}
+.searchBar {
+    background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg") no-repeat;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+}
+.contentDiv .hotelImgSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

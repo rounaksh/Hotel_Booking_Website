@@ -1,3 +1,20 @@
-.contentDiv .hotelDetails .paymentDetails .detailsOfCustomer p span {
+.contentDiv .hotelDetails .paymentDescription {
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+    background-color: rgb(132, 136, 139);
+}
+.contentDiv .hotelDetails .paymentDetails .detailsOfCustomer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.contentDiv .hotelDetails .paymentDetails p span {
     font-weight: bold;
+}
+.contentDiv .hotelDetails .paymentDetails .totalAmount {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1% 2%;
+    border: 1px solid black;
+    border-radius: 5px;
 }

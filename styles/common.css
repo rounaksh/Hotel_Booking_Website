@@ -1,4 +1,15 @@
-
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #e0e0e0;
+}
+header {
+    background-color: rosybrown;
+}
+footer {
+    background-color: rosybrown;
+}
 .container {
     display: block;
     width: 100%;

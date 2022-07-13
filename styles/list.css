@@ -2,3 +2,9 @@
     width: 250px;
     height: 150px;
 }
+.hotelList .hotelView {
+    width: 40%;
+    height: auto;
+    margin: 2%;
+    background-color: rgb(132, 136, 139);
+}

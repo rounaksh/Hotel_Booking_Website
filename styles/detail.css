@@ -1,3 +1,13 @@
+.contentDiv .hotelDetails {
+    margin: 2% 4% 0% 4%;
+}
+.contentDiv .hotelDetails .hotelDescription {
+    margin-bottom: 1%;
+}
+.contentDiv .hotelDetails .hotelDescription .detailOfHotel {
+    margin-top: 1%;
+    bottom: 2%;
+}
 .contentDiv .hotelDetails img {
     width: 500px;
     height: 500px;
