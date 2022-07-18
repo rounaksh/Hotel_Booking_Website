@@ -11,47 +11,77 @@
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/loader.css">
     <link rel="stylesheet" href="styles/payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html" rel="noopener noreferrer">login</a>
-        </header>
-        <div class="contentDiv">
-            <section class="hotelDetails">
-                <section class="paymentDescription">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-                    <h2>Radisson Blu Hotel</h2>
-                    <p>#38 of 1,289 hotels in New Delhi</p>
-                    <p>National Highway 8, New Delhi 110017 India</p>
-                </section>
-                <section class="paymentDetails">
-                    <div class="detailsOfCustomer">
-                        <p><span>Name: </span>John Doe</p>
-                        <p><span>Number of Adults: </span>2</p>
-                        <p><span>Check-in Date: </span>06/06/2020</p>
-                        <p><span>Check-out Date: </span>08/06/2020</p>
+    <nav class="navbar navbar-light justify-content-between fixed-top">
+        <a class="navbar-brand"><img class="logo" src="assests/images/logo.png" alt="logo"></a>
+        <form class="form-inline">
+            <a href="login.html" id="login" rel="noopener noreferrer" class="btn text-dark font-weight-bold">
+                login
+            </a>
+        </form>
+    </nav>
+    <div class="container-fluid mb-5 pb-5" style="margin-top: 120px !important;">
+        <div class="row mt-4 mb-0">
+            <div class="col-12 d-none d-lg-block d-md-block">
+                <div class="card border-0 w-50 mx-auto" style="background-color: rgb(132, 136, 139) !important;">
+                    <img class="w-75 h-50 d-lg-block d-md-block d-none d-xs-none" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                    <div class="card-body pl-0 pb-0">
+                        <h2 class="font-weight-bold">Radisson Blu Hotel</h2>
+                        <p class="font-weight-bold">#38 of 1,289 hotels in New Delhi</p>
+                        <span class="font-weight-bold">National Highway 8, New Delhi 110017 India</span>
                     </div>
-                    <div class="totalAmount">
-                        <p><span>Tariff Breakdown: </span>Rs.1000 x 2 Adults x 5 Nights</p>
-                        <p><span>Total Amount: </span>Rs.10000</p>
+                </div>
+            </div>
+            <div class="col-12 d-lg-none d-md-none">
+                <div class="card border-0 mx-auto" style="background-color: rgb(132, 136, 139) !important;">
+                    <img class="d-md-none d-sm-block img-fluid" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                    <div class="card-body pl-0 pb-0">
+                        <h2 class="font-weight-bold">Radisson Blu Hotel</h2>
+                        <p class="font-weight-bold">#38 of 1,289 hotels in New Delhi</p>
+                        <span class="font-weight-bold">National Highway 8, New Delhi 110017 India</span>
                     </div>
-                </section>
-            </section>
+                </div>
+            </div>
+            <div class="col-md-11 col-sm-12 mx-sm-auto mt-3">
+                <p><span class="font-weight-bold">Name: </span>John Doe</p>
+                <p><span class="font-weight-bold">Number of Adults: </span>2</p>
+                <p><span class="font-weight-bold">Check-in Date: </span>06/06/2020</p>
+                <p class="mb-0"><span class="font-weight-bold">Check-out Date: </span>08/06/2020</p>
+                <div class="card bg-transparent border border-dark mt-3 p-4">
+                    <p><span class="font-weight-bold">Tariff Breakdown: </span>Rs.1000 x 2 Adults x 5 Nights</p>
+                    <p class="mb-0"><span class="font-weight-bold">Total Amount: </span>Rs.10000</p>
+                </div>
+            </div>
         </div>
-        <a href="payment.html">Pay Now</a>
-        <footer>
-            <section>
-                <a href="contact.html" rel="noopener noreferrer">Contact Us</a>
-            </section>
-            <section>
-                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-media-links" src="assests/images/facebook.png" alt="facebook"></a>
-                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-media-links" src="assests/images/instagram.png" alt="instagram"></a>
-                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-media-links" src="assests/images/twitter.png" alt="twitter"></a>
-            </section>
-            <section class="copyright-text">&copy; 2020 room search pvt. ltd.</section>
-        </footer>
+        <div class="row pt-3">
+            <div class="col-12">
+                <a href="payment.html" style="color: #000;">Pay Now</a>
+            </div>
+        </div>
     </div>
+
+    <footer class="fixed-bottom">
+        <div class="row">
+            <div class="col-4 py-3 contactUsButton">
+                <a href="contact.html" rel="noopener noreferrer" class="btn text-dark font-weight-bold">Contact
+                    Us</a>
+            </div>
+            <div class="col-4 copyrightText font-weight-bold">&copy; 2020 room search pvt. ltd.</div>
+            <div class="col-4 socialMediaLinks">
+                <a href="http://www.facebook.com" target="_blank" class="p-1" rel="noopener noreferrer"><img
+                        src="assests/images/facebook.png" alt="facebook"></a>
+                <a href="http://www.instagram.com" target="_blank" class="p-1" rel="noopener noreferrer"><img
+                        src="assests/images/instagram.png" alt="instagram"></a>
+                <a href="http://www.twitter.com" target="_blank" class="p-1" rel="noopener noreferrer"><img
+                        src="assests/images/twitter.png" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,28 +1,52 @@
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    background-color: #e0e0e0;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #e0e0e0 !important;
+    font-family: 'Ubuntu', sans-serif !important;
 }
-header {
-    background-color: rosybrown;
+nav {
+    background-color: rosybrown !important;
 }
-footer {
-    background-color: rosybrown;
+a {
+    text-decoration: none !important;
 }
-.container {
-    display: block;
-    width: 100%;
-    height: auto;
+.bg-e0 {
+    background-color: #e0e0e0 !important;
+}
+.contentDiv form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo {
     width: 60px;
     height: 60px;
 }
-.social-media-links {
-    width: 22px;
-    height: 20px;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
 }
-.copyright-text {
+footer .copyrightText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     text-transform: uppercase;
+    font-size: 10px;
+}
+footer .contactUsButton {
+    margin-right: auto;
+}
+footer .socialMediaLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+footer .socialMediaLinks a img {
+    width: 22px !important;
+    height: 20px !important;
+}
+footer .socialMediaLinks {
+    margin-left: auto;
 }
