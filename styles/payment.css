@@ -1,14 +1,6 @@
-.contentDiv .hotelDetails .paymentDetails .detailsOfCustomer {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.container-fluid .paymentDetails {
+    background-color: rosybrown !important;
 }
-.contentDiv .hotelDetails .paymentDetails p span {
-    font-weight: bold;
-}
-.contentDiv .hotelDetails .paymentDetails .totalAmount {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 1% 2%;
-    border: 1px solid black;
-    border-radius: 5px;
+.container-fluid .paymentDetails span {
+    font-family: cursive !important;
 }

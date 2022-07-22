@@ -1,28 +1,33 @@
-.heroImg {
+.indexCardImg {
     width: 150px !important;
     height: 150px !important;
-    border-radius: 20px !important;
-}
-.cityCard {
-    margin: 4% 3%;
+    
 }
 .searchBar {
     background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg") no-repeat;
-    height: 420px;
+    height: 380px;
     background-size: cover;
     background-position: center;
     margin-bottom: 0 !important;
 }
 .jumbotron .form-inline input {
-    width: 300px !important;
     background-color: #f1f1f1 !important;
     border-radius: 12px !important;
 }
-.contentDiv .hotelImgSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container .row .indexCardBorder {
+    border-radius: 35px !important;
+    box-shadow: 10px 10px 10px grey !important;
 }
-.contentDiv a {
-    padding: 5% 1%;
+.container .row .card .hoverEffect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 35px;
+    transition: .5s ease;
+    opacity: 0;
+}
+.container .row .card:hover .hoverEffect {
+    opacity: 1;
 }

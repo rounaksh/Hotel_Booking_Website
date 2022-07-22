@@ -23,49 +23,70 @@
         </form>
     </nav>
     <div class="container-fluid mb-5 pb-5" style="margin-top: 120px !important;">
-        <div class="row mt-4 ml-4">
-            <div class="col-12">
-                <img class="img-fluid" width="500px" height="500px" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-            </div>
-            <div class="col-12 mt-1">
-                <form action="payment.html">
-                    <div>
-                        <label for="numberOfAdults">Adults: 
-                            <input type="number" name="numberOfAdults" id="numberOfAdults" value="1" min="1">
-                        </label>
-                    </div>
-                    <div>
-                        <label for="name">Name:
-                            <input type="text" name="name" id="name" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="fromDate">From Date:
-                            <input type="date" name="fromDate" id="fromDate" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="toDate">To Date:
-                            <input type="date" name="toDate" id="toDate" required>
-                        </label>
-                    </div>
-                    <div>
-                        <label for="total">Total:
-                            <input type="number" name="total" id="total" readonly>
-                        </label>
-                    </div>
-                    <button type="submit">Book Now</button>
-                </form>
-            </div>
+        <div class="row mx-2 p-3">
+            <table class="w-100">
+                <tbody>
+                    <tr class="row">
+                        <th class="col-md-8 p-3 d-flex justify-content-center align-items-center">
+                            <div>
+                                <img class="img-fluid" width="500px" height="500px" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
+                            </div>
+                        </th>
+                        <th class="col-md-4 card-body">
+                            <div >
+                                <form action="payment.html">
+                                    <div class="form-group py-1 row justify-content-between">
+                                        <label for="numberOfAdults" class="col-sm-3 col-form-label">Adults:</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" class="form-control" id="noOfAdults" value="1" min="1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group py-1 row justify-content-between">
+                                        <label class="col-sm-3 col-form-label" for="userName">Name:
+                                        </label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control float-right" type="text" name="userName" id="username" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group py-1 row justify-content-between">
+                                        <label class="col-sm-3 col-form-label" for="fromDate">From Date:</label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control float-right" type="date" name="fromDate" id="from-Date" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group py-1 row justify-content-between">
+                                        <label class="col-sm-3 col-form-label" for="toDate">To Date:</label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control float-right" type="date" name="toDate" id="to-Date" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group py-1 row justify-content-between">
+                                        <label class="col-sm-3 col-form-label" for="total">Total:
+                                        </label>
+                                        <div class="col-sm-7">
+                                            <input class="form-control float-right" type="number" name="total" id="subtotal" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="form-group py-1 row justify-content-center">
+                                        <div class="col-sm-12 text-center">
+                                            <button class="btn" type="submit">Book Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="row ml-4 mt-4">
             <div class="col-12">
                 <div class="hotelDescription">
                     <div class="detailOfHotel">
-                        <h2>Radisson Blu Hotel</h2>
-                        <p>RATING</p>
+                        <h2 class="font-weight-bold">Radisson Blu Hotel</h2>
+                        <h6 class="font-weight-bold">RATING</h6>
                         <p>5 Star</p>
-                        <p>AMENITIES</p>
+                        <h6 class="font-weight-bold">AMENITIES</h6>
                         <ul>
                             <li>Room service</li>
                             <li>Restaurant</li>
@@ -73,7 +94,7 @@
                             <li>Fitness center</li>
                             <li>Pool</li>
                         </ul>
-                        <h5>DESCRIPTION</h5>
+                        <h6 class="font-weight-bold">DESCRIPTION</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem cumque unde debitis consectetur ipsa? Eius numquam natus dolore accusamus, reprehenderit velit corrupti, aperiam veniam eveniet iure itaque rem cum autem.</p>
                     </div>
                 </div>
@@ -86,7 +107,7 @@
                 <a href="contact.html" rel="noopener noreferrer" class="btn text-dark font-weight-bold">Contact
                     Us</a>
             </div>
-            <div class="col-4 copyrightText font-weight-bold">&copy; 2020 room search pvt. ltd.</div>
+            <div class="col-4 copyrightText font-weight-bold align-items-center">&copy; 2020 room search pvt. ltd.</div>
             <div class="col-4 socialMediaLinks">
                 <a href="http://www.facebook.com" target="_blank" class="p-1" rel="noopener noreferrer"><img
                         src="assests/images/facebook.png" alt="facebook"></a>
