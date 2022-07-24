@@ -1,7 +1,16 @@
+.nav-tabs .nav-link.active {
+    background-color: #007bff!important;
+}
+
 .hotelListImg {
     width: 250px;
     height: 150px;
 }
+
 .hotelView {
     background-color: lightgray !important;
+}
+
+.hotelView:hover {
+    background-color: rosybrown !important;
 }

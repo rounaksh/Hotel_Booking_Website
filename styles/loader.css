@@ -5,10 +5,21 @@
     justify-content: center;
     align-items: center;
 }
+
 .loader {
     width: 70px;
     height: 70px;
     border: 12px solid #f3f3f3;
     border-radius: 50%;
     border-top: 12px solid #444444;
+    animation: example 0.9s linear infinite;
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
