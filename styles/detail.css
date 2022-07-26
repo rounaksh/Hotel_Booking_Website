@@ -3,3 +3,9 @@ th {
     text-align: left;
     padding: 8px;
 }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 55px !important;
+    height: 55px !important;
+    color: rosybrown !important;
+}
