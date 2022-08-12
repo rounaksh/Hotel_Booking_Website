@@ -1,5 +1,5 @@
 let cards = [
-    '<div class="col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-4">' +
+    '<div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">' +
     '<div class="card bg-transparent indexCardImg indexBorder border-0">' +
     '<a href="list.html">' +
     '<img width="150px" height="150px" class="indexCardBorder"' +
@@ -12,7 +12,7 @@ let cards = [
     '</div>' +
     '</div>',
 
-    '<div class="col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-4">' +
+    '<div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">' +
     '<div class="card bg-transparent indexCardImg indexBorder border-0">' +
     '<a href="list.html">' +
     '<img width="150px" height="150px" class="indexCardBorder"' +
@@ -25,7 +25,7 @@ let cards = [
     '</div>' +
     '</div>',
 
-    '<div class="col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-4">' +
+    '<div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">' +
     '<div class="card bg-transparent indexCardImg indexBorder border-0">' +
     '<a href="list.html">' +
     '<img width="150px" height="150px" class="indexCardBorder"' +
@@ -38,7 +38,7 @@ let cards = [
     '</div>' +
     '</div>',
 
-    '<div class="col-lg-3 col-md-5 col-sm-12 d-flex justify-content-center my-4">' +
+    '<div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">' +
     '<div class="card bg-transparent indexCardImg indexBorder border-0">' +
     '<a href="list.html">' +
     '<img width="150px" height="150px" class="indexCardBorder"' +
@@ -52,6 +52,20 @@ let cards = [
     '</div>'
 ];
 let container = document.querySelector('#cityCards');
+
 cards.forEach((value) => {
     container.innerHTML += value;
-})
+});
+
+container.style.display = 'none';
+
+function loadMore(x){
+    console.log(x.style.display);
+    if(x.style.display === 'none'){
+        document.querySelector('#indexLoadMoreButton').innerHTML = "View Less";
+        x.style.display = 'flex';
+    } else {
+        document.querySelector('#indexLoadMoreButton').innerHTML = "View More";
+        x.style.display = 'none';
+    }
+}
