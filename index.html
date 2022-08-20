@@ -8,10 +8,7 @@
     <title>Index</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/detail.css">
-    <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/loader.css">
-    <link rel="stylesheet" href="styles/payment.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -20,57 +17,12 @@
 <body>
     <!--Navigation Bar start-->
     <nav class="navbar navbar-light justify-content-between sticky-top"></nav>
-    <!-- Login Modal Here -->
-    <div class="modal" id="loginModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Please Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <form action="index.html" id="loginForm">
-                        <div class="form-inline justify-content-between">
-                            <div class="form-group">
-                                <label for="username">Username: </label>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" value="" type="text" name="username" id="username"
-                                    placeholder="Enter Username" required>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline justify-content-between">
-                            <div class="form-group">
-                                <label for="password">Password: </label>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" value="" type="password" name="password" id="password"
-                                    placeholder="Enter Password" autocomplete="off" required>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Modal footer -->
-                        <div class="modal-footer d-flex justify-content-center align-items-center">
-                            <button type="submit" onclick="login()" class="btn btn-primary"
-                                data-dismiss="modal">Login</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Navigation Bar end-->
 
     <!--Search Bar start-->
     <div class="jumbotron text-center searchBar d-flex justify-content-center align-items-center">
         <div class="col-md-7 col-sm-12 d-flex justify-content-center align-items-center">
-            <form class="form-inline w-75 justify-content-center" action="#" method="get">
-                <input class="form-control w-75" type="search" name="city" id="city" placeholder="City"
+            <form class="form-inline w-75 justify-content-center" autocomplete="off">
+                <input class="form-control w-75" type="text" id="search-input" placeholder="City"
                     aria-label="Search">
             </form>
         </div>
@@ -85,12 +37,12 @@
             <!--City Cards-->
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">
                 <div class="card bg-transparent indexCardImg indexBorder border-0">
-                    <a href="list.html">
+                    <a href="list.html?city=Delhi">
                         <img width="150px" height="150px" class="indexCardBorder"
                             src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
                             alt="new-delhi">
                         <div class="card-img-overlay hoverEffect">
-                            <p class="card-title">Delhi</p>
+                            <p class="card-title" id="cityName">Delhi</p>
                         </div>
                     </a>
                 </div>
@@ -98,7 +50,7 @@
 
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">
                 <div class="card bg-transparent indexCardImg indexBorder border-0">
-                    <a href="list.html">
+                    <a href="list.html?city=Goa">
                         <img width="150px" height="150px" class="indexCardBorder"
                             src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa">
                         <div class="card-img-overlay hoverEffect">
@@ -110,7 +62,7 @@
 
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">
                 <div class="card bg-transparent indexCardImg indexBorder border-0">
-                    <a href="list.html">
+                    <a href="list.html?city=Hydrabad">
                         <img width="150px" height="150px" class="indexCardBorder"
                             src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"
                             alt="charminar">
@@ -123,7 +75,7 @@
 
             <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center my-4">
                 <div class="card bg-transparent indexCardImg indexBorder border-0">
-                    <a href="list.html">
+                    <a href="list.html?city=kolkata">
                         <img width="150px" height="150px" class="indexCardBorder"
                             src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
                             alt="kolkata-calcutta">
